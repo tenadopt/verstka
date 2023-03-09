@@ -2,7 +2,7 @@
 height: 400px;
     width: 400px;
     background-color: green;
-    animation: my-animation 3s ease-in-out 1s 3 alternate both;
+    animation: my-animation 3s ease-in-out 1s infinite alternate both;
 }
 
 /*.box:hover {*/
@@ -14,6 +14,7 @@ height: 400px;
 @keyframes my-animation {
     from {
         background-color: aqua;
+        transform: rotate(0deg);
     }
 
     50% {
@@ -31,5 +32,6 @@ height: 400px;
     to {
         border-radius: 50%;
         background-color: blueviolet;
+        transform: rotate(360deg);
     }
 }
